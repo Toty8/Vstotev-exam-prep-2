@@ -26,6 +26,7 @@ jobs:
       run: echo "Vstotev"
 
   deploy:
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
