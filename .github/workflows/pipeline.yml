@@ -39,7 +39,7 @@ jobs:
 
 
   test-UI:
-
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
